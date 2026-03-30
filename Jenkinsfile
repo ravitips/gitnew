@@ -2,7 +2,7 @@ pipeline{
     agent any
     parameters{
         string(name: 'SOURCE_FILE',description: 'Enter your webpage file', defaultValue: 'index.html')
-        string(name: 'DESTINATION_FILE',description: 'Enter your target path', defaultValue: 'index.nginx-debian.html')
+        string(name: 'DESTINATION_FILE',description: 'Enter your target path', defaultValue: '/var/www/html/index.nginx-debian.html')
         choice(name: 'SERVICE',choices: ['nginx','apache','docker'],description: 'Enter your service name')
     }
     
